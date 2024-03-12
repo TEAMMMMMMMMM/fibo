@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 int main() {
-  int a,b;
+  int hour,minute;
   cout<<"Please insert hour: ";
-  cin>>a;
+  cin>>hour;
   cout<<"Please insert minute: ";
-  cin>>b;
-  if(b>0)
+  cin>>minute;
+  if(minute>0)
   {
-    a++;
+    hour++;
   }
-  else if(b<0 || a<0)
+  else if(minute<0 || hour<0)
   {
     cout<<"Please enter positive integer";
   }
-  a--;
-  cout<<a*30<<" Bath";
+  hour--;
+  cout<<hour*30<<" Bath";
 }
