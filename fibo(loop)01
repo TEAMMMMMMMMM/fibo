@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int num[8],odd=0,even=0;
+  for(int i=0;i<8;i++)
+  {
+    cin>>num[i];
+  }
+  for(int i=0;i<8;i++)
+  {
+    if(num[i]%2==0)
+      even=even+num[i];
+    else
+      odd=odd+num[i];
+  }
+  if(odd>even)
+    cout<<"Odd\n"<<odd<<"\n"<<even;
+  else if(even>odd)
+    cout<<"Even\n"<<even<<"\n"<<odd;
+  else
+    cout<<"Equal\n"<<odd<<"\n"<<even;
+}
